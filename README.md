@@ -1,0 +1,12 @@
+# Server created for handling authentication
+- npm i express bcrypt
+- '/users' GET request for listing all users
+- '/users' POST request for 
+    - providing username, password through request body
+    - hash user password through bcrypt
+- '/users/login' for 
+    - verifying the username first
+    - then compare password with bcrypt.compare()
+    - On success send "SUCCESS"
+    - On fail send "NOT ALLOWED"
+- authentication process before JWT
